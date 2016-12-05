@@ -527,8 +527,8 @@ $(window).load(function(){
         var format = $(this).find('h2').attr('data-format') || '{0}';
         // Animate the element's value from x to y:
         $({someValue: 0}).animate({someValue: toAnimate}, {
-            duration: 1000,
-            easing:'swing', // can be anything
+            duration: 4000,
+            easing:'easeOutQuint', // can be anything
             step: function() { // called on every step
                 // Update the element's text with rounded-up value:
                 target.text(format.replace('{0}', commaSeparateNumber(Math.round(this.someValue))));
@@ -548,7 +548,7 @@ $(window).load(function(){
 /* --------------------------------------------------------
 Date Time Widget
 -----------------------------------------------------------*/
-(function(){
+/*(function(){
     var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
     var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 
@@ -583,10 +583,10 @@ Date Time Widget
 
         // Create a newDate() object and extract the hours of the current time on the visitor's
         var hours = new Date().getHours() % 12;
-
+        hours = hours == 0 ? 12 : hours;
         // Add a leading zero to the hours value
         $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
     }, 1000);
-})();
+})();*/
 
 

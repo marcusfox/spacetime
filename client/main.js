@@ -1,6 +1,11 @@
 import '../imports/startup/client';
 import '../imports/startup/both';
 
+import {Template} from 'meteor/templating';
+import {TimeSync} from 'meteor/mizzao:timesync';
+import {moment} from 'meteor/mrt:moment';
+import { ReactiveVar } from 'meteor/reactive-var';
+
 Meteor.startup(function() {
 
 	/* Javascript Libraries */
@@ -42,6 +47,22 @@ Meteor.startup(function() {
 
 });
 
+Template.serverTime.onCreated(function App_body_onCreated() {
+	this.time = new ReactiveVar(0);
+	var xTime = this.time;
+	Meteor.setInterval(function() {
+		xTime.set(TimeSync.serverTime(null, 1000));
+	}, 1000);
+});
+
+Template.serverTime.helpers({
+	clock() {
+		return "Server Time: " + moment(Template.instance().time.get()).format('hh:mm:ss A');
+	},
+	timezone() {
+		return moment(Template.instance().time.get()).format(' [GMT]Z ');
+	}
+})
 /*
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
