@@ -524,13 +524,14 @@ $(window).load(function(){
     $('.quick-stats').each(function(){
         var target = $(this).find('h2');
         var toAnimate = $(this).find('h2').attr('data-value');
+        var format = $(this).find('h2').attr('data-format') || '{0}';
         // Animate the element's value from x to y:
         $({someValue: 0}).animate({someValue: toAnimate}, {
             duration: 1000,
             easing:'swing', // can be anything
             step: function() { // called on every step
                 // Update the element's text with rounded-up value:
-                target.text(commaSeparateNumber(Math.round(this.someValue)));
+                target.text(format.replace('{0}', commaSeparateNumber(Math.round(this.someValue))));
             }
         });
 

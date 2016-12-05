@@ -39,6 +39,7 @@ Meteor.startup(function() {
 
 	/* All JS functions */
 	$.getScript("/js/functions.js");
+
 });
 
 /*

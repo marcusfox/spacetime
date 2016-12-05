@@ -2,7 +2,7 @@
 
     <header id="header" class="media">
         <a href="" id="menu-toggle"></a> 
-        <a class="logo pull-left" href="index.html">SUPER ADMIN 1.0</a>
+        <a class="logo pull-left" href="index.html">Space-Time v1.0</a>
         
         <div class="media-body">
             <div class="media" id="top-menu">
@@ -50,7 +50,7 @@
                 <!-- Profile Menu -->
                 <div class="text-center s-widget m-b-25 dropdown" id="profile-menu">
                     <a href="" data-toggle="dropdown">
-                        <img class="profile-pic animated" src="img/profile-pic.jpg" alt="">
+                        <img class="profile-pic animated" src="img/planet-2.png" alt="">
                     </a>
                     <ul class="dropdown-menu profile-menu">
                         <li><a href="">My Profile</a> <i class="icon left">&#61903;</i><i class="icon right">&#61815;</i></li>
@@ -58,19 +58,30 @@
                         <li><a href="">Settings</a> <i class="icon left">&#61903;</i><i class="icon right">&#61815;</i></li>
                         <li><a href="">Sign Out</a> <i class="icon left">&#61903;</i><i class="icon right">&#61815;</i></li>
                     </ul>
-                    <h4 class="m-0">Malinda Hollaway</h4>
-                    @malinda-h
+                    <h4 class="m-0">Terastine IV</h4>
+                    (-90, -178)
                 </div>
 
                 <!-- Calendar -->
                 <div class="s-widget m-b-25">
-                    <div id="sidebar-calendar"></div>
+                    <h2 class="tile-title">
+                        Experience Towards Level-Up
+                    </h2>
+                        <div class="tile quick-stats" style="padding: 0;">
+                            <div class="progress progress-striped progress-alt active" style="height: 100%; margin: 0; background-color: transparent;">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                            </div>
+                            <div class="data">
+                                <h2 data-value="35" data-format="{0}%">35%</h2>
+                                <small>Towards Next Level</small>
+                            </div>
+                        </div>
                 </div>
 
                 <!-- Feeds -->
                 <div class="s-widget m-b-25">
                     <h2 class="tile-title">
-                        News Feeds
+                        Quadrant News
                     </h2>
 
                     <div class="s-widget-body">
@@ -427,13 +438,6 @@
             <div class="block-area">
                 <div class="row">
                     <div class="col-md-3 col-xs-6">
-                        <div class="tile quick-stats">
-                            <div id="stats-line-2" class="pull-left"></div>
-                            <div class="data">
-                                <h2 data-value="98">0</h2>
-                                <small>Tickets Today</small>
-                            </div>
-                        </div>
                     </div>
                     <div class="col-md-3 col-xs-6">
                         <div class="tile quick-stats media">
@@ -795,6 +799,97 @@
                     <div class="clearfix"></div>
                 </div>
             </div>
+
+            <div class="block-area" id="modal">
+                    <h3 class="block-title">Modal</h3>
+                    
+                    <p>Example Modal (After triggering)</p>
+                    
+                    <div class="modal" style="position: relative;display: block;z-index: 0;"> <!-- Style for just preview -->
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                        ×
+                                    </button>
+                                    <h4 class="modal-title">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>One fine body...</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-sm">Save changes</button>
+                                    <button type="button" class="btn btn-sm" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="m-t-20">Modal - Live Demo (Click to open)</p>
+                    <div class="m-b-20">
+                            <a data-toggle="modal" href="#modalDefault" class="btn btn-sm">Modal - Default</a>
+                            <a data-toggle="modal" href="#modalNarrower" class="btn btn-sm">Modal - Narrower</a>
+                            <a data-toggle="modal" href="#modalWider" class="btn btn-sm">Modal - Wider</a>
+                    </div>
+                    
+                    <!-- Modal Default -->  
+                    <div class="modal fade" id="modalDefault" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h4 class="modal-title">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales orci ante, sed ornare eros vestibulum ut. Ut accumsan vitae eros sit amet tristique. Nullam scelerisque nunc enim, non dignissim nibh faucibus ullamcorper. Fusce pulvinar libero vel ligula iaculis ullamcorper. Integer dapibus, mi ac tempor varius, purus nibh mattis erat, vitae porta nunc nisi non tellus. Vivamus mollis ante non massa egestas fringilla. Vestibulum egestas consectetur nunc at ultricies. Morbi quis consectetur nunc.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-sm">Save changes</button>
+                                    <button type="button" class="btn btn-sm" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal Narrower --> 
+                    <div class="modal fade" id="modalNarrower" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h4 class="modal-title">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales orci ante, sed ornare eros vestibulum ut. Ut accumsan vitae eros sit amet tristique. Nullam scelerisque nunc enim, non dignissim nibh faucibus ullamcorper. Fusce pulvinar libero vel ligula iaculis ullamcorper. Integer dapibus, mi ac tempor varius, purus nibh mattis erat, vitae porta nunc nisi non tellus. Vivamus mollis ante non massa egestas fringilla. Vestibulum egestas consectetur nunc at ultricies. Morbi quis consectetur nunc.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-sm">Save changes</button>
+                                    <button type="button" class="btn btn-sm" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal Wider -->    
+                    <div class="modal fade" id="modalWider" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h4 class="modal-title">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales orci ante, sed ornare eros vestibulum ut. Ut accumsan vitae eros sit amet tristique. Nullam scelerisque nunc enim, non dignissim nibh faucibus ullamcorper. Fusce pulvinar libero vel ligula iaculis ullamcorper. Integer dapibus, mi ac tempor varius, purus nibh mattis erat, vitae porta nunc nisi non tellus. Vivamus mollis ante non massa egestas fringilla. Vestibulum egestas consectetur nunc at ultricies. Morbi quis consectetur nunc.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-sm">Save changes</button>
+                                    <button type="button" class="btn btn-sm" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
 
             <!-- Chat -->
             <div class="chat">
